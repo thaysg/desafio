@@ -1,144 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <title>Desenvolvendo um Grid System responsivo com CSS</title>
+    <title>Desafio HTML</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <!---NavBar-->
-    <header>
-        <div id="logo">
-            <span class="space">SPACE</span><span class="box">BOX</span>
-        </div>    
-        <nav><!-- Início nav -->
+    
+        
+        <nav>
+            <div id="logo">
+                <span class="space">SPACE</span><span class="box">BOX</span>
+            </div>
+            <!-- Início nav -->
             <ul>
                 <li><a href="#">EMPRESA</a></li>
                 <li><a href="#">SERVIÇO</a></li>
                 <li><a href="#">CONTATO</a></li>
             </ul>
-        </nav><!--/fim nav -->   
-    </header>
+        </nav>
+        <!--/fim nav -->
+    
 
     <div class="container">
         <!--uma coluna-->
-        <div class="row">
-            <div class="col">
-                <div class="teste">
-                    <div class="wrapperG">
-                        <img class="avatar" src="images/5.png"  alt="">
-                        <div class="row">
-                            <div class="wrapper">
-                                <div class="positionJob">NOME: </div>
-                                <div class="status">Alberto</div>
-                                <div class="positionJob">CARGO: </div>
-                                <div class="status">Presidente</div>
-                                <div class="positionJob">IDADE: </div>
-                                <div class="status">46</div>
+        <section id="primaryCard">
+            <div class="row">
+                <div class="col">
+                    <div class="testeHead">
+                        <div class="wrapperH">
+                            <img class="avatar" src="images/5.png" alt="">
+                            <div class="row">
+                                <div class="wrapper">
+                                    <div class="positionJob">NOME: </div>
+                                    <div class="status">Alberto</div>
+                                    <div class="positionJob">CARGO: </div>
+                                    <div class="status">Presidente</div>
+                                    <div class="positionJob">IDADE: </div>
+                                    <div class="status">46</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
+        </section>
+
 
         <!--três colunas-->
+        <section id="firstRow">
+            <div class="row">
+                <a type="button" href="">
+                    <div class="col col-3">
+                        <div class="teste">
+                            <div class="wrapperG ">
+                                <img class="avatar" src="images/5.png" alt="">
+                                <div class="seguidor">1</div>
+                                <div class="row">
+                                    <div class="cardName">
+                                        <div>Alberto</div>
+                                        <div class="positionJob">Presidente</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+                <a type="button" href="">
+                    <div class="col col-3">
+                        <div class="teste">
+                            <div class="wrapperG">
+                                <img class="avatar" src="images/1.png" alt="">
+                                <div class="seguidor">2</div>
+                                <div class="row">
+                                    <div class="cardName">
+                                        <div>Helena</div>
+                                        <div class="positionJob">Gerente</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+                <a type="button" href="">
+                    <div class="col col-3">
+                        <div class="teste">
+                            <div class="wrapperG">
+                                <img class="avatar" src="images/3.jpg" alt="">
+                                <div class="seguidor">3</div>
+                                <div class="row">
+                                    <div class="cardName">
+                                        <div>Fernanda</div>
+                                        <div class="positionJob">Desenvolvedora</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+            </div>
+        </section>
+
+        <section id="secondRow">
+            <!--três colunas-->
         <div class="row">
-            <a class="acard" href="">
+            <a type="button" href="">
+                <div class="row">
+                    <div class="col col-3">
+                        <div class="teste">
+                            <div class="wrapperG">
+                                <img class="avatar" src="images/2.png" alt="">
+                                <div class="seguidor">4</div>
+                                <div class="row">
+                                    <div class="cardName">
+                                        <div>Iris</div>
+                                        <div class="positionJob">Desenvolvedora</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </a>
+    
+            <a type="button" href="">
                 <div class="col col-3">
                     <div class="teste">
-                        <div class="wrapperG ">
-                            <img class="avatar" src="images/5.png"  alt="">
+                        <div class="wrapperG">
+                            <img class="avatar" src="images/5.png" alt="">
+                            <div class="seguidor">5</div>
                             <div class="row">
-                                <div class="cardName">                               
-                                    <div class="status">Alberto</div>                                
-                                    <div class="positionJob">Presidente</div>                                
+                                <div class="cardName">
+                                    <div>Bruno</div>
+                                    <div class="positionJob">Diretor</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </a>
-
-            <div class="col col-3">
-                <div class="teste">
-                    <div class="wrapperG">
-                        <img class="avatar" src="images/1.png"  alt="">
-                        <div class="row">
-                            <div class="cardName">                               
-                                <div class="status">Helena</div>                                
-                                <div class="positionJob">Gerente</div>                                
+    
+            <a type="button" href="">
+                <div class="col col-3">
+                    <div class="teste">
+                        <div class="wrapperG">
+                            <img class="avatar" src="images/3.jpg" alt="">
+                            <div class="seguidor">6</div>
+                            <div class="row">
+                                <div class="cardName">
+                                    <div>Rafaela</div>
+                                    <div class="positionJob">Desenvolvedora</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col col-3">
-                <div class="teste">
-                    <div class="wrapperG">
-                        <img class="avatar" src="images/3.jpg"  alt="">
-                        <div class="row">
-                            <div class="cardName">                               
-                                <div class="status">Fernanda</div>                                
-                                <div class="positionJob">Desenvolvedora</div>                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            </a>
         </div>
+        </section>
 
-         <!--três colunas-->
-         <div class="row">
-            <div class="col col-3">
-                <div class="teste">
-                    <div class="wrapperG">
-                        <img class="avatar" src="images/2.png"  alt="">
-                        <div class="row">
-                            <div class="cardName">                               
-                                <div class="status">Iris</div>                                
-                                <div class="positionJob">Desenvolvedora</div>                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col col-3">
-                <div class="teste">
-                    <div class="wrapperG">
-                        <img class="avatar" src="images/5.png"  alt="">
-                        <div class="row">
-                            <div class="cardName">                               
-                                <div class="status">Bruno</div>                                
-                                <div class="positionJob">Diretor</div>                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col col-3">
-                <div class="teste">
-                    <div class="wrapperG">
-                        <img class="avatar" src="images/3.jpg"  alt="">
-                        <div class="row">
-                            <div class="cardName">                               
-                                <div class="status">Rafaela</div>                                
-                                <div class="positionJob">Desenvolvedora</div>                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-       
     </div>
+
+
+
+
+   <button class="loadJSON">Show DB</button ton>
+
+
+    <script src="script.js"></script>
+
+   
+
 </body>
+
 </html>
