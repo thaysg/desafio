@@ -1,0 +1,223 @@
+/* reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body{
+    background-color: #f1f1ef;
+}
+
+/*NavBar*/
+header {
+    grid-column: span 3;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.4em;
+    background: linear-gradient(to right, #4bd0cf, #0e2f3c);
+    color: red;
+    margin: 0%;
+	padding: 30px;
+    height: 100px;
+  }
+
+  @media (min-width: 1170px) {
+    header {
+        max-width: 100%;
+    }
+}
+
+
+
+  a:link, a:active, a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #4bd0cf;
+}
+
+/* Flex styles -------------------------------------------------*/
+
+  
+
+/* Logo 
+------------------------------------ */
+#logo {
+	width: 248px;
+	height: 10px;	
+	display: block;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+
+/* Barra de navegação 
+------------------------------------ */
+
+
+nav ul {
+	list-style: none;
+	margin-right: 100px;
+	float: right;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a:link {
+	display: block;
+	margin-right: 30px;
+	text-transform: uppercase;
+    font-size: 20px;
+}
+
+
+
+.space{
+    color: #012C4F;
+    border: 1px solid;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px;
+    height: 50px;
+}
+
+.box{
+    color:#4bd0cf;
+    background-color: #002a50;
+    border: 1px solid;    
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px;
+    height: 50px;
+}
+
+/* conteiner */
+.container  {
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+    @media (min-width: 1170px) {
+        .container {
+            max-width: 1170px;
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+    }
+
+  
+
+   
+
+    
+
+/* linha */
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+    .row:before,
+    .row:after {
+        content: "";
+        display: table;
+    }
+    .row:after {
+        clear: both;
+    }
+
+/* colunas */
+.col {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    margin-right: -4px;
+    *zoom: 1;
+    *display: inline;
+}
+    /* duas colonas */
+    @media (min-width: 480px) {
+        .col-2 {
+            width: 50%;
+        }
+    }
+
+    /* tres colunas */
+    @media (min-width: 728px) {
+        .col-3 {
+            width: 33.3333%;
+        }
+    }
+
+    /* sidebar */
+    @media (min-width: 992px) {
+        .col-content {
+            width: 60%;
+        }
+
+        .col-sidebar {
+           width: 40%;
+        }
+    }
+
+
+/* USAR APENAS PARA DEMOSTRAÇÂO */
+.teste {
+    background: white;
+    padding: 30px;
+    text-align: justify;
+    margin: 10px 10px;
+    color: red;
+}
+.big {
+    height: 50px;
+}
+
+.avatar{
+    border-radius: 100%;
+    width: 8rem;
+    padding: 20px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 80px 20px;
+    padding-top: 30px;
+    padding-left: 30px;    
+}
+
+.wrapperG {
+    display: grid;
+    grid-template-columns: 100px 100px;    
+}
+
+.status{
+    font-weight: bold;
+    color: #002a50;
+}
+
+.positionJob{
+    color: #666666;
+}
+
+.cardName {
+    padding-top: 40px;
+    padding-left: 30px;    
+}
+
+.acard:hover {
+	color: #002a50;
+}
+
