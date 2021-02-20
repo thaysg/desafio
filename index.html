@@ -24,6 +24,7 @@
                 <li><a href="#">CONTATO</a></li>
             </ul>
         </nav>
+        <a href="" class="navPanelToggle"><span class="fa fa-bars"></span></a>
         <!--/fim nav -->
     
 
@@ -32,17 +33,17 @@
         <section id="primaryCard">
             <div class="row">
                 <div class="col">
-                    <div class="testeHead">
+                    <div id="tela" class="testeHead">
                         <div class="wrapperH">
-                            <img class="avatar" src="images/5.png" alt="">
+                            <img class="avatar" src="dados.json" alt="">
                             <div class="row">
                                 <div class="wrapper">
                                     <div class="positionJob">NOME: </div>
-                                    <div class="status">Alberto</div>
+                                    <div class="status"></div>
                                     <div class="positionJob">CARGO: </div>
-                                    <div class="status">Presidente</div>
+                                    <div class="status"></div>
                                     <div class="positionJob">IDADE: </div>
-                                    <div class="status">46</div>
+                                    <div class="status"></div>
                                 </div>
                             </div>
                         </div>
@@ -53,12 +54,12 @@
 
 
         <!--três colunas-->
-        <section id="firstRow">
+        <section id="firstRow" class="user-item mx-auto d-flex align-items-center flex-column justify-content-center h-100 w-100">
             <div class="row">
-                <a type="button" href="">
-                    <div class="col col-3">
-                        <div class="teste">
-                            <div class="wrapperG ">
+                <a id="dados" onclick="getJSON()" type="button" href="" class="user-item mx-auto d-flex align-items-center flex-column justify-content-center h-100 w-100">
+                    <div class="col col-3 user-item">
+                        <div class="teste user-item data-toggle="modal"">
+                            <div class="wrapperG user-item">
                                 <img class="avatar" src="images/5.png" alt="">
                                 <div class="seguidor">1</div>
                                 <div class="row">
@@ -76,12 +77,12 @@
                     <div class="col col-3">
                         <div class="teste">
                             <div class="wrapperG">
-                                <img class="avatar" src="images/1.png" alt="">
+                                <img class="avatar" src="images/5.png" alt="">
                                 <div class="seguidor">2</div>
                                 <div class="row">
                                     <div class="cardName">
-                                        <div>Helena</div>
-                                        <div class="positionJob">Gerente</div>
+                                        <div>Bruno</div>
+                                        <div class="positionJob">Diretor</div>
                                     </div>
                                 </div>
                             </div>
@@ -97,8 +98,8 @@
                                 <div class="seguidor">3</div>
                                 <div class="row">
                                     <div class="cardName">
-                                        <div>Fernanda</div>
-                                        <div class="positionJob">Desenvolvedora</div>
+                                        <div>Helena</div>
+                                        <div class="positionJob">Gerente</div>
                                     </div>
                                 </div>
                             </div>
@@ -121,7 +122,7 @@
                                 <div class="seguidor">4</div>
                                 <div class="row">
                                     <div class="cardName">
-                                        <div>Iris</div>
+                                        <div>Fernanda</div>
                                         <div class="positionJob">Desenvolvedora</div>
                                     </div>
                                 </div>
@@ -138,8 +139,8 @@
                             <div class="seguidor">5</div>
                             <div class="row">
                                 <div class="cardName">
-                                    <div>Bruno</div>
-                                    <div class="positionJob">Diretor</div>
+                                    <div>Diego</div>
+                                    <div class="positionJob">Desenvolvedor</div>
                                 </div>
                             </div>
                         </div>
@@ -155,7 +156,7 @@
                             <div class="seguidor">6</div>
                             <div class="row">
                                 <div class="cardName">
-                                    <div>Rafaela</div>
+                                    <div>Iris</div>
                                     <div class="positionJob">Desenvolvedora</div>
                                 </div>
                             </div>
@@ -166,15 +167,15 @@
         </div>
         </section>
 
+        
+
     </div>
 
 
 
-
-   <button class="loadJSON">Show DB</button ton>
-
-
     <script src="script.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+    <script type="text/javascript" src="dados.json"> </script>
 
    
 

@@ -1,13 +1,67 @@
-{
-  "car":
-    [
-      {
-      "color":"black",
-      "year":2018
-      },
-      {
-        "color":"red",
-        "year":2007
-      }
-    ]
+{"dados": [ 
+  { 
+    "id": 1,
+    "foto": "images/5.png",
+    "nome": "Alberto",
+    "cargo": "Presidente",
+    "idade": 20 
+  },
+  { 
+    "id": 2,
+    "foto": "images/5.png",
+    "nome": "Bruno",
+    "cargo": "Diretor",
+    "idade": 21 
+  },
+  { 
+    "id": 3,
+    "foto": "images/3.jpg",
+    "nome": "Helena",
+    "cargo": "Gerente",
+    "idade": 22
+  },
+  { 
+    "id": 4,
+    "foto": "images/2.png",
+    "nome": "Fernanda",
+    "cargo": "Desenvolvedora",
+    "idade": 23
+  },
+  { 
+    "id": 5,
+    "foto": "foto-diego.jpg",
+    "nome": "Diego",
+    "cargo": "Desenvolvedor",
+    "idade": 24
+  },
+  { 
+    "id": 6,
+    "foto": "foto-iris.jpg",
+    "nome": "Iris",
+    "cargo": "Desenvolvedora",
+    "idade": 25 
+  },
+  { 
+    "id": 7,
+    "foto": "foto-hugo.jpg",
+    "nome": "Hugo",
+    "cargo": "Desenvolvedor",
+    "idade": 26 
+  },
+  { 
+    "id": 8,
+    "foto": "foto-gustavo.jpg",
+    "nome": "Gustavo",
+    "cargo": "Desenvolvedor",
+    "idade": 27
+  },
+  { 
+    "id": 9,
+    "foto": "foto-gabriel.jpg",
+    "nome": "Gabriel",
+    "cargo": "Desenvolvedor",
+    "idade": 28
   }
+]
+
+}

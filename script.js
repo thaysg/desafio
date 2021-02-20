@@ -1,17 +1,11 @@
-function loadJSON(callback) {   
+/* function loadJSON(callback) {   
 
 
-    alert("Hello");
-    var xobj = new XMLHttpRequest();
-        xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'dados.json', true); // Replace 'my_data' with the path to your file
-    xobj.onreadystatechange = function () {
-          if (xobj.readyState == 4 && xobj.status == "200") {
-            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-            callback(xobj.responseText);
-          }
-    };
-    xobj.send(null);  
+    alert(clienteTexto);
+    let clienteTexto = '{"nome":"Angelo", "idade":86, "cidade":"São Paulo", "estado":"SP"}'
+  let cliente = JSON.parse(clienteTexto)
+
+document.getElementById("demo").innerHTML = cliente.nome + ", " + cliente.idade + ' - ' + cliente.cidade + '/' + cliente.estado
  }
 
  function init() {
@@ -19,4 +13,23 @@ function loadJSON(callback) {
      // Parse JSON string into object
        var actual_JSON = JSON.parse(response);
     });
-   }
+  }  */
+
+  /*  let clienteTexto = '{"nome":"Angelo", "idade":86, "cidade":"São Paulo", "estado":"SP"}'
+  let cliente = JSON.parse(clienteTexto)
+
+document.getElementById("demo").innerHTML = cliente.nome + ", " + cliente.idade + ' - ' + cliente.cidade + '/' + cliente.estado */
+
+$.getJSON("dados.json", function(data) {
+  var dados = data.dados;
+
+  for (i = 0; i < dados.length; i++) {
+    saida += '<div class="row">';
+    saida += '<div class="col-lg-4 band-img">';
+    saida += '<img src="' + dados[i].foto + '" alt="' + dados[i].nome + '" title="' + dados[i].cargo + '">';
+    saida += '</div>';
+    saida += '</div>';
+  }
+
+  document.getElementById('tela').innerHTML = saida;
+});

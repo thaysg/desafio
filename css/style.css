@@ -7,9 +7,62 @@
     box-sizing: border-box;
 }
 
+/*
+	Introspect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
+/* Reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: flexbox;
+}
+
 body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    -webkit-text-size-adjust: none;
     background-color: #f1f1ef;
 }
+
+/* Box Model */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 
 /*NavBar*/
 header {
@@ -121,6 +174,65 @@ nav ul li a:link {
 }
 
 
+.navPanelToggle {
+    position: fixed;
+    text-decoration: none;
+    height: 4em;
+    right: 3em;
+    top: .75em;
+    width: 4em;
+    display: none;
+    z-index: 10002;
+}
+
+    .navPanelToggle:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important;
+        color: #fff;
+        display: block;
+        font-size: 16px;
+        height: 2.25em;
+        left: 0.5em;
+        line-height: 2.25em;
+        position: absolute;
+        text-align: center;
+        top: 0.5em;
+        width: 3.5em;
+    }
+
+    @media screen and (max-width: 980px) {
+
+        .navPanelToggle {
+            display: block;
+        }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+        .navPanelToggle {
+            right: 1em;
+        }
+
+    }
+
+    .navPanelToggle *:before {
+        color: #fff;
+        display: block;
+        font-size: 16px;
+        height: 2.25em;
+        left: 0.5em;
+        line-height: 2.25em;
+        position: absolute;
+        text-align: center;
+        top: 0.5em;
+        width: 3.5em;
+    }
+
 
 .space {
     color: #012C4F;
@@ -146,17 +258,161 @@ nav ul li a:link {
 /* conteiner */
 .container {
     width: 100%;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
-@media (min-width: 1170px) {
-    .container {
-        max-width: 1170px;
-        padding-top: 20px;
-        padding-bottom: 30px;
+.container.\31 25\25 {
+    width: 100%;
+    max-width: 100em;
+    min-width: 80em;
+}
+
+.container.\37 5\25 {
+    width: 60em;
+}
+
+.container.\35 0\25 {
+    width: 40em;
+}
+
+.container.\32 5\25 {
+    width: 20em;
+}
+
+.container {
+    width: 80em;
+}
+
+@media screen and (max-width: 1680px) {
+
+    .container.\31 25\25 {
+        width: 100%;
+        max-width: 100em;
+        min-width: 80em;
     }
+
+    .container.\37 5\25 {
+        width: 60em;
+    }
+
+    .container.\35 0\25 {
+        width: 40em;
+    }
+
+    .container.\32 5\25 {
+        width: 20em;
+    }
+
+    .container {
+        width: 80em;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+    .container.\31 25\25 {
+        width: 100%;
+        max-width: 81.25em;
+        min-width: 65em;
+    }
+
+    .container.\37 5\25 {
+        width: 48.75em;
+    }
+
+    .container.\35 0\25 {
+        width: 32.5em;
+    }
+
+    .container.\32 5\25 {
+        width: 16.25em;
+    }
+
+    .container {
+        width: 65em;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    .container.\31 25\25 {
+        width: 100%;
+        max-width: 112.5%;
+        min-width: 90%;
+    }
+
+    .container.\37 5\25 {
+        width: 67.5%;
+    }
+
+    .container.\35 0\25 {
+        width: 45%;
+    }
+
+    .container.\32 5\25 {
+        width: 22.5%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    .container.\31 25\25 {
+        width: 100%;
+        max-width: 112.5%;
+        min-width: 90%;
+    }
+
+    .container.\37 5\25 {
+        width: 67.5%;
+    }
+
+    .container.\35 0\25 {
+        width: 45%;
+    }
+
+    .container.\32 5\25 {
+        width: 22.5%;
+    }
+
+    .container {
+        width: 90% !important;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .container.\31 25\25 {
+        width: 100%;
+        max-width: 112.5%;
+        min-width: 90%;
+    }
+
+    .container.\37 5\25 {
+        width: 67.5%;
+    }
+
+    .container.\35 0\25 {
+        width: 45%;
+    }
+
+    .container.\32 5\25 {
+        width: 22.5%;
+    }
+
+    .container {
+        width: 90% !important;
+    }
+
 }
 
 
@@ -227,6 +483,7 @@ nav ul li a:link {
     text-align: justify;
     margin: 10px 10px;
     color: #002a50;
+    display: inline-flex;
 }
 
 .testeHead {
@@ -276,6 +533,10 @@ nav ul li a:link {
     grid-template-columns: 100px 100px;
 }
 
+#firstRow{
+    display: flex;
+}
+
 .status {
     font-weight: bold;
     color: #002a50;
@@ -283,6 +544,7 @@ nav ul li a:link {
 
 .positionJob {
     color: #666666;
+    font-size: 12px;
 }
 
 .cardName {
@@ -310,3 +572,62 @@ nav ul li a:link {
         width: 100%;
     }
 }
+
+.user .user-item .user-item-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    background-color: rgba(26, 188, 156, 0.9);
+  }
+  .user .user-item .user-item-caption:hover {
+    opacity: 1;
+  }
+  .user .user-item .user-item-caption .user-item-caption-content {
+    font-size: 1.5rem;
+  }
+  
+  .user-modal .user-modal-title {
+    font-size: 2.25rem;
+    line-height: 2rem;
+  }
+  @media (min-width: 992px) {
+    .user-modal .user-modal-title {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+  }
+  .user-modal .close {
+    position: absolute;
+    z-index: 1;
+    right: 1.5rem;
+    top: 1rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #1abc9c;
+    opacity: 1;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .col {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
